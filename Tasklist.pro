@@ -11,8 +11,11 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp
+        mainwindow.cpp \
+    listoftask.cpp
 
-HEADERS  += mainwindow.h
+HEADERS  += mainwindow.h \
+    listoftask.h \
+    headers.h
 
 FORMS    += mainwindow.ui

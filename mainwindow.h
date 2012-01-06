@@ -1,7 +1,7 @@
 #ifndef MAINWINDOW_H
 #define MAINWINDOW_H
 
-#include <QMainWindow>
+#include "headers.h"
 
 namespace Ui {
     class MainWindow;
@@ -14,6 +14,13 @@ class MainWindow : public QMainWindow
 public:
     explicit MainWindow(QWidget *parent = 0);
     ~MainWindow();
+
+    ListOfTask newTaskList;
+
+private slots:
+    void on_pushButton_clicked();
+
+    void on_lineEdit_returnPressed();
 
 private:
     Ui::MainWindow *ui;
