@@ -1,5 +1,5 @@
-#ifndef HEADERS_H
-#define HEADERS_H
+#ifndef COREHEADERS_H
+#define COREHEADERS_H
 
 // standart includes
 
@@ -14,4 +14,4 @@ using namespace boost;
 #include "listoftask.h"
 #include "task.h"
 
-#endif // HEADERS_H
+#endif // COREHEADERS_H
