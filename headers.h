@@ -1,20 +1,10 @@
 #ifndef HEADERS_H
 #define HEADERS_H
 
-// standart includes
+// my core
+#include "Core/core-headers.h"
 
-#include <list>
-#include <boost/shared_ptr.hpp>
-#include <QMainWindow>
-#include <QtGui/QApplication>
-
-using namespace std;
-using namespace boost;
-
-// my classes
-#include "listoftask.h"
-#include "ui_mainwindow.h"
-#include "mainwindow.h"
-
+// Qt interface
+#include "Qt-interface/Qt-interface-headers.h"
 
 #endif // HEADERS_H

@@ -11,11 +11,16 @@ TEMPLATE = app
 
 
 SOURCES += main.cpp\
-        mainwindow.cpp \
-    listoftask.cpp
+        Qt-interface/mainwindow.cpp \
+        Core/listoftask.cpp \
+        Core/task.cpp
 
-HEADERS  += mainwindow.h \
-    listoftask.h \
-    headers.h
+HEADERS  += headers.h \
+         Qt-interface/Qt-interface-headers.h \
+         Qt-interface/mainwindow.h \
+         Core/core-headers.h \
+         Core/listoftask.h \
+         Core/task.h
 
-FORMS    += mainwindow.ui
+
+FORMS    += Qt-interface/mainwindow.ui

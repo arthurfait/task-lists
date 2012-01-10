@@ -10,5 +10,8 @@
 *.lai
 *.la
 *.a
-#Qt creator pro files
+# Qt creator pro files
 *.user
+
+# Another files
+.directory
