@@ -2,8 +2,11 @@
 
 void processingInput(Ui::MainWindow* ui, ListOfTask newTaskList)
 {
+    // Standart complexity for task
+    int complexity = 1;
+
     QString buff = ui->lineEdit->text();
-    bool result = newTaskList.AddNewTask(buff.toStdString());
+    bool result = newTaskList.AddNewTask(buff.toStdString(), complexity);
 
     if (result)
     {
