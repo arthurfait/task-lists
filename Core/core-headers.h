@@ -11,7 +11,9 @@ using namespace std;
 using namespace boost;
 
 // my classes
-#include "listoftask.h"
 #include "task.h"
+#include "listoftask.h"
+#include "aspect.h"
+#include "aspects.h"
 
 #endif // COREHEADERS_H

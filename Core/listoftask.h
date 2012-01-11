@@ -7,11 +7,12 @@ class ListOfTask
 {
 public:
     ListOfTask();
-    list <string>* getListOfTask();
-    bool AddNewTask (string newTask);
+    ~ListOfTask();
+    list < shared_ptr<Task> > GetListOfTask();
+    bool AddNewTask (string name, int complexity);
     int count;
 private:
-    shared_ptr < list<string> > listOfTask;
+    list< shared_ptr<Task> > listOfTask;
 };
 
 #endif // LISTOFTASK_H

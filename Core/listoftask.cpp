@@ -2,16 +2,15 @@
 
 ListOfTask::ListOfTask()
 {
-    shared_ptr < list<string> > buff (new list <string>());
-    listOfTask = buff;
     count = 0;
 }
 
-bool ListOfTask::AddNewTask(string newTask)
+bool ListOfTask::AddNewTask(string name, int complexity)
 {
     try
     {
-        listOfTask->push_back(newTask);
+        shared_ptr <Task> newTask (new Task(name, complexity));
+        listOfTask.push_back(newTask);
         count++;
         return true;
     }
@@ -21,7 +20,12 @@ bool ListOfTask::AddNewTask(string newTask)
     }
 }
 
-list <string>* ListOfTask::getListOfTask()
+list < shared_ptr<Task> > ListOfTask::GetListOfTask()
 {
-    return listOfTask.get();
+    return listOfTask;
+}
+
+ListOfTask::~ListOfTask()
+{
+    cout<<"List of task deleted."<<endl;
 }
