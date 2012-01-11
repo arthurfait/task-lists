@@ -21,7 +21,7 @@ const int Aspect::GetLevel()
     return (const int) level;
 }
 \
-const bool Aspect::GetName()
+const string Aspect::GetName()
 {
     return (const string) name;
 }
