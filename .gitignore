@@ -15,5 +15,5 @@
 
 # Another files
 .directory
-*.sh*
-.gitignore
+*.sh
+*.*~
