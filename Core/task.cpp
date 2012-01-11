@@ -2,9 +2,9 @@
 
 Task::Task(string name, int complexity)
 {
-    setName(name);
-    setComplexity(complexity);
-    setProgress(false);
+    SetName(name);
+    SetComplexity(complexity);
+    SetProgress(false);
 }
 
 bool Task::SetComplexity(int complexity)
